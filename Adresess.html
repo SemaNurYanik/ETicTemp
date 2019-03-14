@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!--CSS Style-->
+    <link href="Assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="Assets/css/custom.css" rel="stylesheet" />
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <!--Javascript-->
+    <script src="Assets/js/jquery.min.js"></script>
+    <script src="Assets/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!--navbar begin-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="HomePage.html">Shop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Link1 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link3</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav mr-3">
+
+                <li class="nav-item btnAnaGiris">
+                    <a class="nav-link" href="Login.html"><span class="fas fa-angle-double-right mr-2"></span>Giriş Yap</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="fas fa-envelope"></span>  Mesajlar
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Mesaj1</a>
+                        <a class="dropdown-item" href="#">Mesaj2</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Mesajlar</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="fas fa-shopping-cart"></span> Sepetim
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Ürün1</a>
+                        <a class="dropdown-item" href="#">Ürün2</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Sepete Git</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="fas fa-user mr-2"></span>Profil
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="My_Profile.html">Profili Görüntüle</a>
+                        <a class="dropdown-item" href="Adresess.html">Adreslerim</a>
+                        <a class="dropdown-item" href="#">Siparişlerim</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"><span class="fas fa-sign-out-alt mr-2"></span>Çıkış Yap</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--navbar end-->
+
+
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-xl-12 my-4">
+                <h2>Adreslerim</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <table class="table text-center table-hover">
+                    <thead>
+                        <tr>
+                            <th>Adres Tanım</th>
+                            <th>Adres Detay</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ev</td>
+                            <td>Fusce vel sapien elit in malesuada semper mi.</td>
+                            <td>
+                                <button class="btn btn-info" data-toggle="modal" data-target="#adresGuncelle"><span class="fas fa-edit"></span></button>
+                                <button class="btn btn-danger" data-toggle="modal" data-target="#adresSil"><span class="fas fa-trash"></span></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>İş</td>
+                            <td>Fusce vel sapien elit in malesuada semper mi.</td>
+                            <td>
+                                <button class="btn btn-info" data-toggle="modal" data-target="#adresGuncelle"><span class="fas fa-edit"></span></button>
+                                <button class="btn btn-danger" data-toggle="modal" data-target="#adresSil"><span class="fas fa-trash"></span></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Diğer</td>
+                            <td>Fusce vel sapien elit in malesuada sempeelit in malesuada semperelit in malesuada semperr mi.</td>
+                            <td>
+                                <button class="btn btn-info" data-toggle="modal" data-target="#adresGuncelle"><span class="fas fa-edit"></span></button>
+                                <button class="btn btn-danger" data-toggle="modal" data-target="#adresSil"><span class="fas fa-trash"></span></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="row mt-5">
+                    <div class="col-xl-12 mt-5 text-right mr-5">
+                        <button class="btn btn-success" data-toggle="modal" data-target="#adresGuncelle"><span class="fas fa-plus"></span>Yeni Adres</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--adresi sil modal-begin-->
+
+    <div class="fade modal" tabindex="-1" role="dialog" id="adresSil">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Adresi Sil<span class="fas fa-trash 2x text-danger ml-4"></span></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Adresi silmek istediğinize emin misiniz?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">İptal</button>
+                    <button type="button" class="btn btn-danger">Adresi Sil</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--adresi sil modal-end-->
+    <!--adresi güncelle modal begin-->
+       
+
+    <div class="modal fade" id="adresGuncelle" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Adresi Güncelle</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Adres Tanım:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Adres Detay:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">İptal</button>
+                    <button type="button" class="btn btn-primary">Güncelle</button>
+                    <button type="button" class="btn btn-success">Yeni Adres</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--adresi güncelle modal end-->
+    <!--footer begin-->
+    <div class="card text-center fixed-bottom">
+        <div class="card-body">
+            <a href="#" class="btn text-secondary">
+                <span class="fab fa-twitter fa-2x"></span>
+            </a>
+            <a href="#" class="btn text-secondary">
+                <span class="fab fa-facebook fa-2x"></span>
+            </a>
+            <a href="#" class="btn text-secondary">
+                <span class="fab fa-instagram fa-2x"></span>
+            </a>
+            <div>
+                <a href="#" class="btn btn-info">
+                    <span class="fa fa-at mr-2">E-posta gönder</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="card-footer text-muted">
+            Designed By SNY &copy; 2019
+        </div>
+    </div>
+    <!--footer end-->
+
+</body>
+</html>

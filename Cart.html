@@ -1,0 +1,271 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!--CSS Style-->
+    <link href="Assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="Assets/css/custom.css" rel="stylesheet" />
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <!--Javascript-->
+    <script src="Assets/js/jquery.min.js"></script>
+    <script src="Assets/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!--navbar begin-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="HomePage.html">Shop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Link1 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link3</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav mr-3">
+
+                <li class="nav-item btnAnaGiris">
+                    <a class="nav-link" href="Login.html"><span class="fas fa-angle-double-right mr-2"></span>Giriş Yap</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="fas fa-envelope"></span>  Mesajlar
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Mesaj1</a>
+                        <a class="dropdown-item" href="#">Mesaj2</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Mesajlar</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="fas fa-shopping-cart"></span> Sepetim
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Ürün1</a>
+                        <a class="dropdown-item" href="#">Ürün2</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Sepete Git</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="fas fa-user mr-2"></span>Profil
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="My_Profile.html">Profili Görüntüle</a>
+                        <a class="dropdown-item" href="Adresess.html">Adreslerim</a>
+                        <a class="dropdown-item" href="#">Siparişlerim</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"><span class="fas fa-sign-out-alt mr-2"></span>Çıkış Yap</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--navbar end-->
+
+
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-xl-12 my-4">
+                <h2>Sepetim</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <table class="table text-center table-hover">
+                    <thead>
+                        <tr>
+                            <th>Seç</th>
+                            <th>Ürün</th>
+
+                            <th>Birim Fiyatı</th>
+                            <th>Adedi</th>
+                            <th>Ara Toplam</th>
+                            <th>Detay</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="align-middle">
+                                <input type="checkbox" />
+                            </td>
+                            <td>
+                                İphone 8
+                                <a href="https://www.teknosa.com/apple-iphone-8-64-gb-gold-akilli-telefon-p-125076584">
+                                    <img src="Assets/img/iphone.jpg" />
+                                </a>
+
+                            </td>
+
+                            <td class="align-middle">6.000tl</td>
+                            <td class="align-middle">
+                                <button class="btn btn-success" data-toggle="modal" data-target="#siparisDetay"><span class="fas fa-plus"></span></button>
+
+                                2
+                                <button class="btn btn-warning" data-toggle="modal" data-target="#siparisSil"><span class="fas fa-minus"></span></button>
+                            </td>
+                            <td class="align-middle">12.000tl</td>
+                            <td class="align-middle">
+
+
+                                <button class="btn btn-info" data-toggle="modal" data-target="#siparisDetay"><span class="fas fa-truck-moving"></span></button>
+
+                                <button class="btn btn-danger" data-toggle="modal" data-target="#urunuSil"><span class="fas fa-trash"></span></button>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="align-middle">
+                                <input type="checkbox" />
+                            </td>
+                            <td>
+                                İphone 8
+                                <a href="https://www.teknosa.com/apple-iphone-8-64-gb-gold-akilli-telefon-p-125076584">
+                                    <img src="Assets/img/iphone.jpg" />
+                                </a>
+
+                            </td>
+
+                            <td class="align-middle">6.000tl</td>
+                            <td class="align-middle">
+                                <button class="btn btn-success" data-toggle="modal" data-target="#siparisDetay"><span class="fas fa-plus"></span></button>
+
+                                2
+                                <button class="btn btn-warning" data-toggle="modal" data-target="#siparisSil"><span class="fas fa-minus"></span></button>
+                            </td>
+                            <td class="align-middle">12.000tl</td>
+                            <td class="align-middle">
+
+
+                                <button class="btn btn-info" data-toggle="modal" data-target="#siparisDetay"><span class="fas fa-truck-moving"></span></button>
+                                <button class="btn btn-danger" data-toggle="modal" data-target="#urunuSil"><span class="fas fa-trash"></span></button>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="align-middle">
+                                <input type="checkbox" />
+                            </td>
+                            <td>
+                                İphone 8
+                                <a href="https://www.teknosa.com/apple-iphone-8-64-gb-gold-akilli-telefon-p-125076584">
+                                    <img src="Assets/img/iphone.jpg" />
+                                </a>
+
+                            </td>
+
+                            <td class="align-middle">6.000tl</td>
+                            <td class="align-middle">
+                                <button class="btn btn-success" data-toggle="modal" data-target="#siparisDetay"><span class="fas fa-plus"></span></button>
+
+                                2
+                                <button class="btn btn-warning" data-toggle="modal" data-target="#siparisSil"><span class="fas fa-minus"></span></button>
+                            </td>
+                            <td class="align-middle">12.000tl</td>
+                            <td class="align-middle">
+                                <button class="btn btn-info" data-toggle="modal" data-target="#siparisDetay"><span class="fas fa-truck-moving"></span></button>
+                                <button class="btn btn-danger" data-toggle="modal" data-target="#urunuSil"><span class="fas fa-trash"></span></button>
+                            </td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="row">
+                    <div class="col-xl-12 text-right">
+                        <a href="#" class="btn btn-danger mr-4">
+                            <span class="fa fa-trash mr-2"></span> Sepeti Boşalt
+                        </a>
+                        <a href="#" class="btn btn-success mr-4">
+                            <span class="fa fa-shopping-basket mr-2"></span> Satın Al
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--kargo detay modal-begin-->
+    <div class="fade modal" tabindex="-1" role="dialog" id="siparisDetay">
+        <div class="modal-dialog" role="document">
+            <div class="modal-body bg-light" id="siparisDetay">
+                <h5>Kargo Detayı</h5>
+                <hr />
+                <h5>Bugün kargoda</h5>
+                <p>Consectetur adipiscing elit fusce vel.</p>              
+                <h5>Kargo Ücreti</h5>
+                <p>Consectetur adipiscing elit fusce vel.</p>
+            </div>
+        </div>
+    </div>
+    <!--kargo detay modal-end-->
+
+
+    <!--ürünü sil modal-begin-->
+
+    <div class="fade modal" tabindex="-1" role="dialog" id="urunuSil">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Ürünü Sil<span class="fas fa-trash 2x text-danger ml-4"></span></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Bu ürünü sepetten silmek istediğinize emin misiniz?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Çıkış</button>
+                    <button type="button" class="btn btn-danger">Evet</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--ürünü sil modal-end-->
+
+    <!--footer begin-->
+    <div class="card text-center fixed-bottom">
+        <div class="card-body">
+            <a href="#" class="btn text-secondary">
+                <span class="fab fa-twitter fa-2x"></span>
+            </a>
+            <a href="#" class="btn text-secondary">
+                <span class="fab fa-facebook fa-2x"></span>
+            </a>
+            <a href="#" class="btn text-secondary">
+                <span class="fab fa-instagram fa-2x"></span>
+            </a>
+            <div>
+                <a href="#" class="btn btn-info">
+                    <span class="fa fa-at mr-2">E-posta gönder</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="card-footer text-muted">
+            Designed By SNY &copy; 2019
+        </div>
+    </div>
+    <!--footer end-->
+</body>
+</html>

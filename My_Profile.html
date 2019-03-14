@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!--CSS Style-->
+    <link href="Assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="Assets/css/custom.css" rel="stylesheet" />
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <!--Javascript-->
+    <script src="Assets/js/jquery.min.js"></script>
+    <script src="Assets/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!--navbar begin-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="HomePage.html">Shop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Link1 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link3</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav mr-3">
+
+                <li class="nav-item btnAnaGiris">
+                    <a class="nav-link" href="Login.html"><span class="fas fa-angle-double-right mr-2"></span>Giriş Yap</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="fas fa-envelope"></span>  Mesajlar
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Mesaj1</a>
+                        <a class="dropdown-item" href="#">Mesaj2</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Mesajlar</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="fas fa-shopping-cart"></span> Sepetim
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Ürün1</a>
+                        <a class="dropdown-item" href="#">Ürün2</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Sepete Git</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="fas fa-user mr-2"></span>Profil
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="My_Profile.html">Profili Görüntüle</a>
+                        <a class="dropdown-item" href="#">Adreslerim</a>
+                        <a class="dropdown-item" href="#">Siparişlerim</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"><span class="fas fa-sign-out-alt mr-2"></span>Çıkış Yap</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--navbar end-->
+
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col-xl-12 my-4">
+                <h2>Profil Sayfası</h2>
+                <hr />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-4 text-center">
+                <img src="https://via.placeholder.com/150x150" class="rounded-circle img-thumbnail img-fluid " />
+            </div>
+            <div class="col-xl-8">
+                <div class="row form-group">
+                    <label class="col-xl-2 text-danger" for="nameInput">İsim:</label>
+                    <div class="col-xl-10">
+                        <input type="text" class="form-control" placeholder="John" id="nameInput" />
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label class="col-xl-2 text-danger" for="surnameInput">Soyad:</label>
+                    <div class="col-xl-10">
+                        <input type="text" class="form-control" placeholder="Doe" id="surnameInput" />
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label class="col-xl-2 text-danger" for="surnameInput">E-posta:</label>
+                    <div class="col-xl-10">
+                        <input readonly type="email" class="form-control" placeholder="abc@abc.com" id="surnameInput" />
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label class="col-xl-2 text-danger" for="surnameInput">Tel:</label>
+                    <div class="col-xl-10">
+                        <input type="tel" class="form-control" id="surnameInput" placeholder="0(___)______" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-xl-2 col-form-label text-danger">Cinsiyet:</label>
+                    <div class="col-xl-10 mt-2">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="inlineCheckbox1" value="Kadın" name="cinsiyet">
+                            <label class="form-check-label" for="inlineCheckbox1">Kadın</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="inlineCheckbox2" value="Erkek" name="cinsiyet">
+                            <label class="form-check-label" for="inlineCheckbox2">Erkek</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label class="col-xl-2 text-danger" for="surnameInput">Doğum T.:</label>
+                    <div class="col-xl-10">
+                        <input type="date" class="form-control" id="surnameInput" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12 text-right">
+                <a href="#" class="btn btn-warning">
+                    <span class="fas fa-edit"></span>Güncelle
+                </a>
+                <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#hesapSil">
+                    <span class="far fa-trash-alt"></span>Sil
+                </a>
+            </div>
+        </div>
+        <div class="col-xl-12 text-center mt-5 text-success" style="font-size:40px !important">
+            Bilgiler başarıyla güncellendi.<span class="fas fa-check"></span>
+
+        </div>
+    </div>
+    <!--hesabı sil modal-begin-->
+
+    <div class="fade modal" tabindex="-1" role="dialog" id="hesapSil">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Hesabı Sil</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Hesabı silmek istediğinize emin misiniz?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">İptal</button>
+                    <button type="button" class="btn btn-danger">Hesabı Sil</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--hesabı sil modal-end-->
+    <!--footer begin-->
+    <div class="card text-center fixed-bottom">
+        <div class="card-body">
+            <a href="#" class="btn text-secondary">
+                <span class="fab fa-twitter fa-2x"></span>
+            </a>
+            <a href="#" class="btn text-secondary">
+                <span class="fab fa-facebook fa-2x"></span>
+            </a>
+            <a href="#" class="btn text-secondary">
+                <span class="fab fa-instagram fa-2x"></span>
+            </a>
+            <div>
+                <a href="#" class="btn btn-info">
+                    <span class="fa fa-at mr-2">E-posta gönder</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="card-footer text-muted">
+            Designed By SNY &copy; 2019
+        </div>
+    </div>
+    <!--footer end-->
+</body>
+</html>
